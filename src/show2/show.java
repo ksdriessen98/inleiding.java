@@ -10,11 +10,14 @@ import java.applet.*;
 public class show extends Applet {
 
     public void init() {
-        setBackground(Color.blue);
+        setBackground(Color.white);
     }
 
     public void paint(Graphics g) {
-        g.setColor(Color.yellow);
-        g.drawString("Welcome to Java!!", 50, 60 );
+        g.setColor(Color.blue);
+        g.drawString("Keanu", 50, 60 );
+
+        g.setColor(Color.red);
+        g.drawString("Driessen", 50, 70 );
     }
 }
