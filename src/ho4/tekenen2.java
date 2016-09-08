@@ -23,8 +23,8 @@ public class tekenen2 extends Applet {
         g.drawLine(60, 80, 50, 80);
         g.drawLine(50, 80, 50, 100);
         g.drawLine(30, 95, 40, 95);
-        g.drawLine(30, 95, 30, 85);
-        g.drawLine(30, 85, 40, 85);
-        g.drawLine(40, 85, 40, 95);
+        g.drawLine(30, 95, 30, 87);
+        g.drawLine(30, 87, 40, 87);
+        g.drawLine(40, 87, 40, 95);
     }
 }
