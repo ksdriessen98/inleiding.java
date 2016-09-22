@@ -27,8 +27,8 @@ public class knoppen_en_tekstvakken2 extends Applet {
         KnopListener kl = new KnopListener();
         knop.addActionListener(kl);
 
-        label = new Label("Type iets " +
-                "en druk op enter " + "klik op Ok");
+        label = new Label("Type een getal " +
+                "en klik op Ok");
 
         add(label);
         add(tekstvak);
@@ -37,7 +37,7 @@ public class knoppen_en_tekstvakken2 extends Applet {
     }
 
     public void paint(Graphics g) {
-        g.drawString("de uikomst is " + getal, 40, 100);
+        g.drawString("de uikomst is inclusief btw = €" + getal, 40, 100);
     }
 
     class TekstvakListener implements ActionListener {
