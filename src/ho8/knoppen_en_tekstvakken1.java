@@ -18,7 +18,7 @@ public class knoppen_en_tekstvakken1 extends Applet {
     int j;
     int h;
     int i;
-
+    int z;
 
     public void init(){
         setLayout(new FlowLayout());
@@ -47,6 +47,7 @@ public class knoppen_en_tekstvakken1 extends Applet {
         j = 0;
         h = 0;
         i = 0;
+        z = 0;
     }
 
     @Override
@@ -56,11 +57,14 @@ public class knoppen_en_tekstvakken1 extends Applet {
         g.drawString("vrouwen : " + j, 100, 55);
         g.drawString("leerlingen mannen : " + h, 100, 70);
         g.drawString("leelingen vrouwen : " + i, 100, 85);
+        g.drawString("totaal = " + z, 100, 100);
+
     }
 
     class KnopListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             f = f +  1;
+            z = z + 1;
             repaint();
         }
     }
@@ -68,6 +72,7 @@ public class knoppen_en_tekstvakken1 extends Applet {
     class KnopListener1 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             j = j + 1;
+            z = z + 1;
             repaint();
         }
     }
@@ -75,6 +80,7 @@ public class knoppen_en_tekstvakken1 extends Applet {
     class KnopListener2 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             h = h + 1;
+            z = z + 1;
             repaint();
         }
     }
@@ -82,8 +88,8 @@ public class knoppen_en_tekstvakken1 extends Applet {
     class KnopListener3 implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             i = i + 1;
+            z = z + 1;
             repaint();
         }
     }
-
 }
