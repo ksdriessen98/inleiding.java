@@ -8,8 +8,6 @@ import java.awt.*;
  */
 public class opdracht11_1 extends Applet {
 
-    public void init() {}
-
     public void paint(Graphics g) {
         int lijnen;
         int y = 0;
