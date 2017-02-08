@@ -4,17 +4,17 @@ import java.applet.Applet;
 import java.awt.*;
 
 /**
- * Created by keanu driessen on 10-11-2016.
+ * Created by keanu driessen on 8-2-2017.
  */
-public class opdracht11_1 extends Applet {
+public class opdracht11_1 extends Applet{
 
-    public void paint(Graphics g) {
-        int lijnen;
-        int y = 0;
+public void paint(Graphics g) {
+    int teller;
+    int y = 20;
 
-        for(lijnen = 1; lijnen <= 10; lijnen++) {
-            y += 20;
-            g.drawLine(y , 50, y, 250 );
-        }
+    for (teller = 0; teller < 10; teller++) {
+        y += 20;
+        g.drawLine(y, 20, y, 100);
     }
+}
 }
